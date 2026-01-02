@@ -377,7 +377,7 @@ func (s *State) Fetch(src string) int {
 		return 1
 	}
 	fmt.Fprintf(messageWriter, "Output file:\t\t%s\n", s.output)
-    fmt.Fprintln(messageWriter, "Status Code =", resp.Status, "\n")
+    fmt.Fprintln(messageWriter, "Status Code =", resp.Status)
 	
 	// Get the target length
 	client := httpClient("tordl")
